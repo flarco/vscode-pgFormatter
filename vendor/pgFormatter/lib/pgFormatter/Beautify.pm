@@ -2215,6 +2215,8 @@ sub set_dicts {
         schema_to_xml schema_to_xmlschema schema_to_xml_and_xmlschema database_to_xml database_to_xmlschema xmlroot
         database_to_xml_and_xmlschema table_to_xml query_to_xmlcursor_to_xml xmlcomment xmlconcat xmlelement xmlforest
         xml_is_well_formed_content xml_is_well_formed_document xml_is_well_formed xml_out xml_recv xml_send xmlagg xmlpi
+
+        from_unixtime unix_timestamp struct map named_struct array datediff if collect collect_list collect_set percentile percentile_approx explode
         );
 
     my @copy_keywords = ( 'STDIN', 'STDOUT' );
