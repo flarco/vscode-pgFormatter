@@ -46,3 +46,12 @@ To ignore a file and prevent it from being formatted, you can simply add a comme
 
 select id from people;
 ```
+## Sideloading the extension
+After making changes to the extension, you might want to test it end to end instead of running it in debug mode. To do this, you can sideload the extension. This can be done by preparing the extension and loading it directly.
+
+1. `npm install -g vsce` to make sure you have vsce installed globally
+2. `git clone https://github.com/flarco/vscode-pgFormatter.git` to clone the repo if you havent already done so
+3. `cd vscode-pgFormatter`
+4. `npm install` to install dependencies if you havent already done so
+5. `vsce package` to build the package. This will generate a file with extension `vsix`
+6. Run the command `Extensions: Install from VSIX...`, choose the vsix file generated in the previous step
